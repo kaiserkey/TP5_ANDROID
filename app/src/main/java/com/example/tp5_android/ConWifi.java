@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class ConWifi extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-            //si no estoy conectado a internet no hace nada
             if (intent.getBooleanExtra("connected", false)) {
                 //realizar llamada al numero 2664553747 cuando se conecte a la red wifi
                 Intent intent1 = new Intent(Intent.ACTION_CALL);
